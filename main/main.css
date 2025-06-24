@@ -1,0 +1,65 @@
+:root{
+    --main-color-grad : linear-gradient(91deg,#f73,#ff5722 50%,#e54917);
+    --main-color : #ea4c1b;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 11%;
+    width: 78%;
+    padding: 1vh 0;
+}
+
+.nav .tapsi-name{
+    cursor: pointer;
+    font-size: large;
+}
+
+.nav .tapsi-name:hover{
+    color: var(--main-color);
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li{
+    padding: 1vh 1vw;
+    font-size: 15px;
+}
+
+.nav ul li a:hover{
+    color: var(--main-color);
+}
+
+
+.nav ul li .download-btn{
+    padding: 1.5vh 2vw;
+    border-radius: 50px;
+    border: none;
+    background: var(--main-color-grad);
+    color: white;
+    font-size:medium;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.nav ul li .download-btn:hover{
+    filter: brightness(85%);
+}
