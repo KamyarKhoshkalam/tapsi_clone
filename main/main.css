@@ -10,6 +10,7 @@
     text-decoration: none;
     color: black;
     list-style-type: none;
+    text-align: right;
 }
 
 body{
@@ -20,8 +21,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 11%;
-    width: 78%;
+    margin-right: 9%;
+    width: 82%;
     padding: 1vh 0;
 }
 
@@ -50,7 +51,7 @@ body{
 
 
 .nav ul li .download-btn{
-    padding: 1.5vh 2vw;
+    padding: 1.5vh 2.5vw;
     border-radius: 50px;
     border: none;
     background: var(--main-color-grad);
@@ -62,4 +63,83 @@ body{
 
 .nav ul li .download-btn:hover{
     filter: brightness(85%);
+}
+
+.first-section{
+    background-color: #fefefe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12vh;
+    margin-right: 9%;
+    width: 82%;
+    padding: 1vh 0;
+    gap: 20px;
+}
+
+.first-section .right{
+    padding-right: 5vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.first-section .right h1{
+    font-size: 48px;
+}
+
+.first-section .right .buttons{
+    display: flex;
+    justify-content:flex-start;
+    gap: 25px;
+}
+
+.first-section .right .buttons .right-button{
+    flex: 1;
+    cursor: pointer;
+    background-color: black;
+    padding: 0 32px;
+    border-radius: 50px;
+    border: none;
+    height: 68px;
+    max-width:fit-content;
+}
+
+.first-section .right .buttons .right-button:hover{
+    opacity: 0.8;
+}
+
+.first-section .right .buttons .right-button a{
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+.first-section .right .buttons .left-button{
+    flex: 1;
+    cursor: pointer;
+    background-color: white;
+    padding: 0 32px;
+    border-radius: 50px;
+    height: 68px;
+    max-width:fit-content;
+}
+
+.first-section .right .buttons .left-button a{
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.first-section .left{
+    width: 50%;
+}
+
+.first-section .left img{
+    width: 100%;
+    border-radius: 40px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.12);
 }
