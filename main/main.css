@@ -21,6 +21,7 @@ header {
   position: fixed;
 }
 .nav {
+  background-color: white;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -158,6 +159,49 @@ header {
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.12);
 }
 
+.second-section {
+  margin: 0 10%;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+.second-section h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tab-selector {
+  border-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 0;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.tab-selector a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 95px;
+}
+
+.tab-selector a img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0.5;
+}
+.tab-selector a img:hover {
+  opacity: 1;
+}
+
+.tab-selector a p {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 990px) {
   .download-btn {
     display: none;
@@ -246,5 +290,14 @@ header {
     justify-content: center;
     line-height: 32px;
     padding: 0 32px;
+  }
+
+  .second-section {
+    margin: 0;
+    padding: 50px 20px;
+  }
+
+  .second-section h2 {
+    font-size: 24px;
   }
 }
