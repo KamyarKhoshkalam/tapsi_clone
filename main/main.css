@@ -1,145 +1,215 @@
-:root{
-    --main-color-grad : linear-gradient(91deg,#f73,#ff5722 50%,#e54917);
-    --main-color : #ea4c1b;
+:root {
+  --main-color-grad: linear-gradient(91deg, #f73, #ff5722 50%, #e54917);
+  --main-color: #ea4c1b;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: black;
-    list-style-type: none;
-    text-align: right;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  text-align: right;
 }
 
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 9%;
-    width: 82%;
-    padding: 1vh 0;
+.nav {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 9%;
+  width: 82%;
+  padding: 1vh 0;
 }
 
-.nav .tapsi-name{
+.nav .tapsi-name {
+  cursor: pointer;
+  font-size: large;
+}
+
+.nav .tapsi-name:hover {
+  color: var(--main-color);
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li {
+  padding: 1vh 1vw;
+  font-size: 15px;
+}
+
+.nav ul li a:hover {
+  color: var(--main-color);
+}
+
+.nav ul li .download-btn {
+  padding: 1.5vh 2.5vw;
+  border-radius: 50px;
+  border: none;
+  background: var(--main-color-grad);
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.nav ul li .download-btn:hover {
+  filter: brightness(85%);
+}
+
+.nav i {
+  display: none;
+  font-size: 40px;
+}
+
+.first-section {
+  grid-column-gap: 63px;
+  grid-row-gap: 0;
+  background: linear-gradient(#fff, #f5f7f7);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: calc(100vh - 101px);
+  padding: 80px 10%;
+  width: 100%;
+}
+
+.first-section h1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: 48px;
+  font-weight: 600;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-content: flex-end;
+  line-height: 72px;
+  max-width: 590px;
+  padding: 24px 0;
+  white-space: pre-wrap;
+}
+
+.first-section .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  grid-area: 2 / 1 / 3 / 2;
+  padding: 16px 0;
+}
+
+.first-section .buttons .right-button {
+  background: #000;
+  color: #fff;
+  align-items: center;
+  border-radius: 999px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  height: 68px;
+  justify-content: center;
+  line-height: 32px;
+  padding: 0 32px;
+}
+
+.first-section .buttons .right-button:hover {
+  background-color: #252525;
+}
+
+.first-section .buttons .middle-button {
+  display: none;
+}
+
+.first-section .buttons .left-button {
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+  align-items: center;
+  border-radius: 999px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  height: 68px;
+  justify-content: center;
+  line-height: 32px;
+  padding: 0 32px;
+}
+
+.first-section .left {
+  align-items: center;
+  background: transparent;
+  display: flex;
+  grid-area: 1 / 2 / 3 / 3;
+  justify-content: center;
+}
+
+.first-section .left img {
+  width: 100%;
+  border-radius: 40px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 990px) {
+  .download-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .nav ul {
+    display: none;
+  }
+
+  .nav i {
+    display: block;
     cursor: pointer;
-    font-size: large;
-}
-
-.nav .tapsi-name:hover{
-    color: var(--main-color);
-}
-
-.nav ul{
-    display: flex;
-    align-items: center;
-}
-
-.nav ul li{
-    padding: 1vh 1vw;
-    font-size: 15px;
-}
-
-.nav ul li a:hover{
-    color: var(--main-color);
-}
-
-
-.nav ul li .download-btn{
-    padding: 1.5vh 2.5vw;
-    border-radius: 50px;
-    border: none;
-    background: var(--main-color-grad);
-    color: white;
-    font-size:medium;
-    cursor: pointer;
-    margin-right: 15px;
-}
-
-.nav ul li .download-btn:hover{
-    filter: brightness(85%);
-}
-
-.first-section{
-    background-color: #fefefe;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 12vh;
-    margin-right: 9%;
-    width: 82%;
-    padding: 1vh 0;
-    gap: 20px;
-}
-
-.first-section .right{
-    padding-right: 5vh;
-    width: 50%;
+  }
+  .first-section {
     display: flex;
     flex-direction: column;
-    gap: 6vh;
-}
+    height: auto;
+    padding: 8px 15px;
+  }
 
-.first-section .right h1{
-    font-size: 48px;
-}
-
-.first-section .right .buttons{
-    display: flex;
-    justify-content:flex-start;
-    gap: 25px;
-}
-
-.first-section .right .buttons .right-button{
-    flex: 1;
-    cursor: pointer;
-    background-color: black;
-    padding: 0 32px;
-    border-radius: 50px;
-    border: none;
-    height: 68px;
-    max-width:fit-content;
-}
-
-.first-section .right .buttons .right-button:hover{
-    opacity: 0.8;
-}
-
-.first-section .right .buttons .right-button a{
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
-}
-
-
-
-.first-section .right .buttons .left-button{
-    flex: 1;
-    cursor: pointer;
-    background-color: white;
-    padding: 0 32px;
-    border-radius: 50px;
-    height: 68px;
-    max-width:fit-content;
-}
-
-.first-section .right .buttons .left-button a{
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-}
-
-.first-section .left{
-    width: 50%;
-}
-
-.first-section .left img{
+  .first-section h1 {
+    align-items: center;
+    align-self: center;
+    font-size: 28px;
+    line-height: 48px;
+    padding: 32px 0;
+    text-align: center;
     width: 100%;
-    border-radius: 40px;
-    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .first-section .buttons {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 25px;
+  }
+
+  .first-section .buttons .left-button {
+    display: none;
+  }
+
+  .first-section .buttons .middle-button {
+    background: transparent;
+    border: 2px solid #000;
+    color: #000;
+    align-items: center;
+    border-radius: 999px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    height: 68px;
+    justify-content: center;
+    line-height: 32px;
+    padding: 0 32px;
+  }
 }
