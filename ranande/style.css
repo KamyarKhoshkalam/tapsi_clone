@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
+  text-align: right;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 12%;
+  border-bottom: 1px solid #e1e3e3;
+}
+
+.sections {
+  margin-top: 120px;
+  padding: 0 12%;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #cfe9fe, #edf3fe);
+}
+
+.first-section img {
+  width: 50%;
+}
+
+.first-section .info {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 64px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.first-section .info h1 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.first-section .info p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.first-section .info .user-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2vh;
+}
+.first-section .info .user-input input {
+  width: 100%;
+  padding: 15px 18px;
+  font: inherit;
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  margin: 0;
+  display: block;
+  background-color: #fff;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  box-sizing: border-box;
+  position: relative;
+  cursor: text;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+}
+
+.first-section .info button {
+  background-color: #276ef1;
+  color: #fff;
+  padding: 6px 16px;
+  min-width: 105px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 999px;
+  border: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .sections {
+    padding: 0;
+  }
+  .first-section {
+    flex-direction: column;
+    border-radius: 0;
+    background: linear-gradient(180deg, #cfe9fe, #edf3fe);
+    scroll-margin: 66px;
+    width: 100%;
+  }
+  .first-section img {
+    width: 100%;
+  }
+  .first-section .info {
+    width: 100%;
+  }
+  .first-section .info h1,
+  .first-section .info p {
+    width: 100%;
+    text-align: center;
+  }
+}
