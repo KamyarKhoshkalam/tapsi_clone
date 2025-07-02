@@ -194,12 +194,52 @@ header {
   width: 100%;
   opacity: 0.5;
 }
+
+.tab-selector a img.active {
+  opacity: 1;
+}
 .tab-selector a img:hover {
   opacity: 1;
 }
 
 .tab-selector a p {
   opacity: 0.5;
+}
+.tab-selector a p.active {
+  opacity: 1;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.tabs .tab-image {
+  display: flex;
+  margin-right: 10%;
+  position: relative;
+  width: 45%;
+}
+.tabs .tab-image img {
+  width: 100%;
+}
+
+.tabs .tab-info {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.tabs .tab-info h3 {
+  color: #141414;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.tabs .tab-info p {
+  color: #333;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 990px) {
@@ -299,5 +339,34 @@ header {
 
   .second-section h2 {
     font-size: 24px;
+  }
+
+  .second-section .tabs {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .second-section .tab-image {
+    margin: 0;
+    width: 100%;
+  }
+
+  .second-section .tab-info {
+    width: 100%;
+  }
+
+  .second-section .tab-info h3 {
+    color: #141414;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .second-section .tab-info p {
+    color: #333;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 30px;
   }
 }
