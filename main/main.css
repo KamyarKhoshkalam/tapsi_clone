@@ -346,6 +346,104 @@ header {
   min-width: 96px;
   padding: 0 24px;
 }
+.third-section .container .info .buttom .bit a:hover,
+.fourth-section .container .info .buttom .bit a:hover {
+  background-color: rgb(52, 52, 52);
+}
+
+.fifth-section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 80px 10%;
+  width: 100%;
+}
+
+.fifth-section .container {
+  background: linear-gradient(
+    90deg,
+    var(--Palette-Orange-Orange-50, #fff0e9) 0,
+    #f4f1f0 100%
+  );
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.fifth-section .container .right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 64px 64px 64px 0;
+  width: 55%;
+}
+
+.fifth-section .container .right h2 {
+  color: #141414;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.fifth-section .container .right p {
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.fifth-section .container .right .tags {
+  gap: 16px;
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.fifth-section .container .right .tags .first {
+  background: #fff;
+  color: #000;
+  align-items: center;
+  border-radius: 999px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  height: 52px;
+  justify-content: center;
+  line-height: 32px;
+  min-width: 96px;
+  padding: 0 24px;
+}
+.fifth-section .container .right .tags .first:hover {
+  filter: brightness(90%);
+}
+
+.fifth-section .container .right .tags .second {
+  background-image: linear-gradient(91deg, #f73, #ff5722 50%, #e54917);
+  color: #fff;
+  align-items: center;
+  border-radius: 999px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  height: 52px;
+  justify-content: center;
+  line-height: 32px;
+  min-width: 96px;
+  padding: 0 24px;
+}
+.fifth-section .container .right .tags .second:hover {
+  filter: brightness(90%);
+}
+.fifth-section .container .left {
+  height: 100%;
+  width: 45%;
+}
+.fifth-section .container .left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 45px;
+}
 
 @media screen and (max-width: 990px) {
   .download-btn {
@@ -542,5 +640,30 @@ header {
     font-weight: 500;
     height: 40px;
     min-height: 40px;
+  }
+
+  .fifth-section {
+    padding: 80px 20px;
+  }
+
+  .fifth-section .container {
+    flex-direction: column-reverse;
+  }
+  .fifth-section .container .right {
+    gap: 22px;
+    padding: 0 16px 32px;
+    width: 100%;
+  }
+  .fifth-section .container .right p {
+    font-size: 18px;
+  }
+  .fifth-section .container .right .tags {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .fifth-section .container .left {
+    width: 100%;
   }
 }
