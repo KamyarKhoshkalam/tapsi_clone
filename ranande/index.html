@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="./output.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>تپسی تپ سی تپسی ثبت‌نام ثبت نام غیرحضوری اینترنتی راننده سفیر</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="swiper.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- nav-------- -->
@@ -15,7 +25,7 @@
       <a href="" class="text-3xl">Tapsi</a>
     </nav>
 
-    <!-- main--------- -->
+    <!-- main --------- -->
 
     <div
       class="main mt-[66px] 2xl:px-[12%] min-[768px]:mt-[120px] min-[768px]:p-[16px]"
@@ -66,7 +76,34 @@
         <h2 class="font-semibold text-2xl">
           راننده تپسی شوید و پاداش های متنوع بگیرید !
         </h2>
+        <!-- Slider main container -->
+        <div class="swiper mt-10 rounded-3xl">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/images/3-4061448023.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/6-906645575.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/10-729325626.png" alt="" />
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </section>
+
+      <!-- section 3 -------  -->
+
+      <section></section>
     </div>
   </body>
 </html>
