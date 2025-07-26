@@ -3,28 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./output.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>تپسی تپ سی تپسی ثبت‌نام ثبت نام غیرحضوری اینترنتی راننده سفیر</title>
   </head>
   <body>
-    <header>
-      <a href="">تپسی</a>
-    </header>
+    <!-- nav-------- -->
+    <nav
+      class="flex w-full fixed px-[12%] py-[20px] justify-start shadow-sm top-0 min-[768px]:justify-start bg-white"
+    >
+      <a href="" class="text-3xl">Tapsi</a>
+    </nav>
 
-    <div class="sections">
-      <div class="first-section">
-        <img src="../images/1-2670842892.png" alt="" />
-        <div class="info">
-          <h1>ثبت نام راننده سواری</h1>
+    <!-- main--------- -->
+
+    <div
+      class="main mt-[66px] 2xl:px-[12%] min-[768px]:mt-[120px] min-[768px]:p-[16px]"
+    >
+      <!-- section 1 ------- -->
+
+      <section
+        class="flex flex-col-reverse min-[768px]:flex-row justify-center items-center bg-gradient-to-b from-[#cfe9fe] to-[#edf3fe] rounded-2xl"
+      >
+        <div
+          class="w-[100%] flex flex-col gap-4 pt-[24px] px-[16px] pb-[40px] justify-center items-center min-[768px]:w-[50%] min-[768px]:justify-start min-[768px]:items-start min-[768px]:p-[64px] min-[768px]:gap-4"
+        >
+          <h1 class="text-3xl font-semibold mb-[8px]">ثبت نام راننده سواری</h1>
           <p>به درآمد ماهانه 65 میلیون تومان برسید.</p>
-          <div class="user-input">
-            <input type="text" placeholder="شماره" />
-            <input type="text" placeholder="کد" />
+          <div class="flex flex-col w-full gap-3">
+            <input
+              type="text"
+              name=""
+              placeholder="شماره تلفن همراه خود را وارد کنید"
+              class="bg-white rounded-md py-4 px-4"
+            />
+            <input
+              type="text"
+              name=""
+              placeholder="کد ملی خود را وارد کنید"
+              class="bg-white rounded-md py-4 px-4"
+            />
           </div>
-          <button class="sabt">ثبت‌نام</button>
+          <button
+            class="bg-[#276ef1] w-full rounded-full py-3 text-white cursor-pointer"
+          >
+            ثبت‌نام
+          </button>
+          <a href="" class="self-center text-[#276ef1]"
+            >برای ویرایش اطلاعات کلیک کنید</a
+          >
         </div>
-      </div>
+        <img
+          src="../images/1-2670842892.png"
+          alt=""
+          class="w-full min-[768px]:w-[50%]"
+        />
+      </section>
+
+      <!-- section 2 ------- -->
+
+      <section class="my-[36px]">
+        <h2 class="font-semibold text-2xl">
+          راننده تپسی شوید و پاداش های متنوع بگیرید !
+        </h2>
+      </section>
     </div>
   </body>
 </html>
