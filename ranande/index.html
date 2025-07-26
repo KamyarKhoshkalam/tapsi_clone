@@ -20,7 +20,7 @@
   <body>
     <!-- nav-------- -->
     <nav
-      class="flex w-full fixed px-[12%] py-[20px] justify-start shadow-sm top-0 min-[768px]:justify-start bg-white"
+      class="flex w-full fixed px-[12%] py-[20px] justify-start shadow-sm top-0 min-[768px]:justify-start bg-white z-50"
     >
       <a href="" class="text-3xl">Tapsi</a>
     </nav>
@@ -103,7 +103,56 @@
 
       <!-- section 3 -------  -->
 
-      <section></section>
+      <section
+        class="min-[768px]:p-[24px] my-[48px] flex-col min-[768px]:bg-[#f5f7f6] flex min-[768px]:flex-row rounded-2xl"
+      >
+        <div class="flex flex-col min-[768px]:w-[50%]">
+          <h2 class="font-semibold text-2xl p-[16px] pt-[24px]">
+            مدارک لازم برای ثبت نام راننده
+          </h2>
+          <ul class="flex flex-col">
+            <li class="py-[12px] px-[16px]">گواهینامه</li>
+            <li class="py-[12px] px-[16px]">کارت ماشین</li>
+            <li class="py-[12px] px-[16px]">بیمه نامه خودرو</li>
+          </ul>
+        </div>
+        <div class="flex bg-[#f5f7f6] min-[768px]:w-[50%] flex-col">
+          <h2 class="font-semibold text-2xl p-[16px] pt-[24px]">
+            محاسبه درآمد تپسی
+          </h2>
+          <p class="px-[16px]">
+            شهر محل سکونت خود و ساعت کاری روزانه خود را وارد کنید تا آنلاین
+            درآمد خود را مشاهده کنید.
+          </p>
+          <div
+            class="bg-white mt-[20px] min-[768px]:mt-[40px] py-[24px] px-[16px] flex flex-col items-center text-lg rounded-2xl"
+          >
+            <p class="mt-[24px]">درآمد ماهیانه شما</p>
+            <p>
+              <span class="text-4xl mt-2" id="money">43,464,000</span> تومان
+            </p>
+            <select
+              class="w-full py-[12px] bg-[#ededed] rounded-xl outline-0 mt-[20px]"
+            >
+              <option value="">تهران</option>
+              <option value="">تهران</option>
+              <option value="">تهران</option>
+            </select>
+            <div class="flex py-[12px] justify-between w-full">
+              <p>ساعت کاری روزانه</p>
+              <p><span id="time">8</span> ساعت</p>
+            </div>
+            <input
+              class="w-full outline-0"
+              id="range"
+              type="range"
+              min="4"
+              max="12"
+              step="4"
+            />
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
