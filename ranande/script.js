@@ -1,6 +1,8 @@
 const range = document.querySelector("#range");
 const money = document.querySelector("#money");
 const time = document.querySelector("#time");
+const nav = document.querySelector("#navbar");
+const section = document.querySelector("#section");
 
 range.addEventListener("input", (e) => {
   time.textContent = range.value;
@@ -13,15 +15,15 @@ const swiper = new Swiper(".swiper", {
   // loopAdditionalSlides: 5,
   // loopedSlides: 3,
   centeredSlides: true,
-  slidesPerView: 1,
+  slidesPerView: 1.2,
   spaceBetween: 20,
   direction: "horizontal",
 
   // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
 
   // Navigation arrows
   navigation: {
@@ -29,3 +31,22 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.boundingClientRect.top < 0 && !entry.isIntersecting) {
+        document.querySelector("#sabtBtn").classList.remove("opacity-0");
+        document.querySelector("#sabtBtn").classList.remove("translate-y-5");
+      } else {
+        document.querySelector("#sabtBtn").classList.add("opacity-0");
+        document.querySelector("#sabtBtn").classList.add("translate-y-5");
+      }
+    });
+  },
+  {
+    threshold: 0,
+  }
+);
+
+observer.observe(section);

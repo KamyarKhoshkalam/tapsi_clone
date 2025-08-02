@@ -19,10 +19,11 @@
   </head>
   <body>
     <!-- nav-------- -->
-    <nav
-      class="flex w-full fixed px-[12%] py-[20px] justify-start shadow-sm top-0 min-[768px]:justify-start bg-white z-50"
+    <nav id="navbar"
+      class="flex w-full fixed min-[768px]:px-[12%] py-[20px] shadow-sm justify-end top-0 min-[768px]:justify-between bg-white z-50 items-center"
     >
       <a href="" class="text-3xl">Tapsi</a>
+      <button class="min-[768px]:w-auto min-[768px]:h-auto w-0 h-0 m-0 p-0 opacity-0 translate-y-5 transition-all duration-300 text-white bg-blue-500 rounded-full min-[768px]:py-1 min-[768px]:px-2.5 text-sm font-bold" id="sabtBtn">ثبت‌ نام</button>
     </nav>
 
     <!-- main --------- -->
@@ -32,7 +33,7 @@
     >
       <!-- section 1 ------- -->
 
-      <section
+      <section id="section"
         class="flex flex-col-reverse min-[768px]:flex-row justify-center items-center bg-gradient-to-b from-[#cfe9fe] to-[#edf3fe] rounded-2xl"
       >
         <div
@@ -90,7 +91,15 @@
             <div class="swiper-slide">
               <img src="/images/10-729325626.png" alt="" />
             </div>
-            ...
+            <div class="swiper-slide">
+              <img src="/images/3-4061448023.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/6-906645575.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/10-729325626.png" alt="" />
+            </div>
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
@@ -224,6 +233,7 @@
           
         </ul>
       </section>
+      
     </div>
   </body>
 </html>
