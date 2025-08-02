@@ -48,5 +48,22 @@ const observer = new IntersectionObserver(
     threshold: 0,
   }
 );
+const observer2 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.boundingClientRect.top < 0 && !entry.isIntersecting) {
+        document.querySelector("#sbtBtn").classList.remove("opacity-0");
+        document.querySelector("#sbtBtn").classList.remove("translate-y-5");
+      } else {
+        document.querySelector("#sbtBtn").classList.add("opacity-0");
+        document.querySelector("#sbtBtn").classList.add("translate-y-5");
+      }
+    });
+  },
+  {
+    threshold: 0,
+  }
+);
 
 observer.observe(section);
+observer2.observe(section);
