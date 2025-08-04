@@ -74,9 +74,15 @@ items.forEach((item) => {
   item.addEventListener("click", (e) => {
     items.forEach((allss) => {
       if (allss != item) {
-        allss.querySelector(".content").classList.add("hidden");
+        allss.querySelector(".content").classList.add("h-0");
+        allss.querySelector(".content").classList.add("p-0");
+        allss.querySelector(".content").classList.remove("h-auto");
+        allss.querySelector(".content").classList.remove("p-[16px]");
       }
     });
-    item.querySelector(".content").classList.toggle("hidden");
+    item.querySelector(".content").classList.toggle("h-0");
+    item.querySelector(".content").classList.toggle("p-0");
+    item.querySelector(".content").classList.toggle("h-auto");
+    item.querySelector(".content").classList.toggle("p-[16px]");
   });
 });
