@@ -67,3 +67,16 @@ const observer2 = new IntersectionObserver(
 
 observer.observe(section);
 observer2.observe(section);
+
+const items = document.querySelector("#itemssss").querySelectorAll("li");
+
+items.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    items.forEach((allss) => {
+      if (allss != item) {
+        allss.querySelector(".content").classList.add("hidden");
+      }
+    });
+    item.querySelector(".content").classList.toggle("hidden");
+  });
+});
