@@ -223,6 +223,9 @@
   .my-\[48px\] {
     margin-block: 48px;
   }
+  .my-\[76px\] {
+    margin-block: 76px;
+  }
   .my-\[96px\] {
     margin-block: 96px;
   }
@@ -314,8 +317,11 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .gap-7 {
+    gap: calc(var(--spacing) * 7);
   }
   .gap-\[16px\] {
     gap: 16px;
@@ -389,6 +395,9 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
   .p-\[16px\] {
     padding: 16px;
   }
@@ -397,6 +406,9 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-7 {
+    padding-inline: calc(var(--spacing) * 7);
   }
   .px-\[10px\] {
     padding-inline: 10px;
@@ -407,11 +419,17 @@
   .px-\[16px\] {
     padding-inline: 16px;
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
   .py-\[4px\] {
     padding-block: 4px;
@@ -427,6 +445,9 @@
   }
   .py-\[24px\] {
     padding-block: 24px;
+  }
+  .py-\[25px\] {
+    padding-block: 25px;
   }
   .py-\[48\.5px\] {
     padding-block: 48.5px;
@@ -534,6 +555,11 @@
   .min-\[768px\]\:w-\[50\%\] {
     @media (width >= 768px) {
       width: 50%;
+    }
+  }
+  .min-\[768px\]\:w-fit {
+    @media (width >= 768px) {
+      width: fit-content;
     }
   }
   .min-\[768px\]\:flex-row {
