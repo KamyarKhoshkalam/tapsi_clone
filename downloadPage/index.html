@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <title>دانلود اپلیکیشن تاکسی اینترنتی - ثبت نام مسافر تپسی| TAPSI</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="output.css" />
     <link
       rel="shortcut icon"
       href="../images/favicon.ico.png"
@@ -21,7 +21,9 @@
       >
         <a href="" class="text-2xl">Tapsi</a>
         <div>
-          <ul class="flex items-center gap-[32px]">
+          <ul
+            class="min-[770px]:flex hidden items-center min-[770px]:gap-[32px]"
+          >
             <li>ثبت‌نام راننده خودرو</li>
             <li>ثبت‌نام راننده موتور</li>
             <li>وبلاگ</li>
@@ -33,8 +35,26 @@
               دانلود تپسی
             </li>
           </ul>
+          <h3 class="min-[770px]:hidden block cursor-pointer" id="hamburg">
+            hamburg
+          </h3>
         </div>
       </nav>
+      <ul
+        class="hidden min-[770px]:hidden flex-col justify-center gap-[32px] fixed w-full bg-white py-[12px] px-[16px]"
+        id="nav"
+      >
+        <li>ثبت‌نام راننده خودرو</li>
+        <li>ثبت‌نام راننده موتور</li>
+        <li>وبلاگ</li>
+        <li>پشتیبانی</li>
+        <li>اپلیکیشن رانندگان</li>
+        <li
+          class="bg-[linear-gradient(91deg,_#f73,_#ff5722_50%,_#e54917)] flex h-[40px] items-center justify-center w-[130px] text-white rounded-full"
+        >
+          دانلود تپسی
+        </li>
+      </ul>
     </header>
 
     <!-- main --------- -->
@@ -195,6 +215,126 @@
       </section>
 
       <!-- section 2 ---------- -->
+      <section
+        class="min-[1200px]:w-[1170px] min-[1000px]:w-[970px] min-[770px]:w-[750px] px-[15px] mx-auto"
+      >
+        <div
+          class="flex py-[50px] border-t-[1px] border-[#979797] max-[770px]:max-w-[500px] max-[770px]:mx-auto"
+        >
+          <div
+            class="flex gap-4 justify-between min-[1000px]:flex-row-reverse flex-col-reverse max-[1000px]:gap-10"
+          >
+            <div
+              class="flex gap-4 justify-between flex-col min-[770px]:flex-row-reverse min-[1000px]:w-2/3 max-[770px]:items-center"
+            >
+              <div
+                class="flex flex-col min-[770px]:w-1/2 max-[770px]:items-center"
+              >
+                <img src="" alt="" />
+                <div
+                  class="mb-[30px] max-[770px]:items-center max-[770px]:flex max-[770px]:flex-col"
+                >
+                  <h3 class="my-[10px] text-2xl">تپسی تلفنی ۱۶۳۰</h3>
+                  <h4 class="text-sm text-[#9b9b9b]">
+                    درخواست تاکسی بدون نیاز به اپلیکیشن و اینترنت
+                  </h4>
+                </div>
+                <div
+                  class="max-[770px]:items-center max-[770px]:flex max-[770px]:flex-col"
+                >
+                  <p class="text-sm/10 min-[770px]:h-[144px]">
+                    برای همه کسانی که به نرم افزار تپسی یا اینترنت دسترسی
+                    ندارند، 1630 یک راه سریع و آسان برای درخواست آنلاین خودرو
+                    است. با 1630 تماس بگیرید تا برای شما تپسی بگیریم!
+                  </p>
+                  <a
+                    href=""
+                    class="items-center bg-[#ff5722] flex justify-around mt-[50px] py-[10px] px-[20px] cursor-pointer max-w-[175px] text-white rounded-md"
+                  >
+                    اطلاعات بیشتر</a
+                  >
+                </div>
+              </div>
+
+              <div
+                class="flex flex-col min-[770px]:w-1/2 max-[770px]:items-center"
+              >
+                <img src="" alt="" />
+                <div
+                  class="mb-[30px] max-[770px]:items-center max-[770px]:flex max-[770px]:flex-col"
+                >
+                  <h3 class="my-[10px] text-2xl">نسخه وب تپسی</h3>
+                  <h4 class="text-sm text-[#9b9b9b]">
+                    از پشت سیستم، درخواست سفر بده
+                  </h4>
+                </div>
+                <div
+                  class="max-[770px]:items-center max-[770px]:flex max-[770px]:flex-col"
+                >
+                  <p class="text-sm/10 min-[770px]:h-[144px]">
+                    اگر به هر دلیل ترجیح می‌دهید از تپسی روی کامپیوتر استفاده
+                    کنید یا امکان نصب نرم‌افزار تپسی مسافر را ندارید، می‌توانید
+                    از نسخه پیشرو تپسی (نسخه وب) برای درخواست خودرو استفاده
+                    کنید.
+                  </p>
+                  <a
+                    href=""
+                    class="items-center bg-[#ff5722] flex justify-around mt-[50px] py-[10px] px-[20px] cursor-pointer max-w-[175px] text-white rounded-md"
+                  >
+                    ورود به نسخه وب</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center min-[1000px]:w-1/3">
+              <h2 class="text-2xl">به هر شکلی تپسی بگیرید</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 3 --------- -->
+      <section class="py-[50px] bg-[#f8f8f9]">
+        <div
+          id="sec3container"
+          class="flex flex-col min-[1000px]:flex-row min-[770px]:items-start items-center gap-4 min-[1200px]:w-[1170px] min-[1000px]:w-[970px] min-[770px]:w-[750px] px-[15px] mx-auto"
+        >
+          <h2 class="min-[1000px]:w-1/3 text-2xl">ویدئوی محصولات و ویژگی‌ها</h2>
+          <div
+            class="min-[1000px]:w-2/3 flex gap-4 flex-col min-[770px]:flex-row-reverse"
+          >
+            <div
+              class="min-[770px]:w-1/2 w-full max-[770px]:flex max-[770px]:flex-col max-[770px]:justify-center max-[770px]:items-center max-[770px]:max-w-[500px] max-[770px]:mx-auto"
+            >
+              <video src=""></video>
+              <div
+                class="max-[770px]:flex max-[770px]:flex-col max-[770px]:justify-center max-[770px]:items-center"
+              >
+                <h3 class="py-[15px] text-xl">پیشنهاد مقصد</h3>
+                <p class="text-[#979797] max-[770px]:text-center">
+                  تپسی هوشمندانه مقصد همیشگی‌تان را از یک مبدا خاص به شما معرفی
+                  می‌کند تا بدون اتلاف وقت درخواست سفر دهید.
+                </p>
+              </div>
+            </div>
+            <div
+              class="min-[770px]:w-1/2 w-full max-[770px]:flex max-[770px]:flex-col max-[770px]:justify-center max-[770px]:items-center max-[770px]:max-w-[500px] max-[770px]:mx-auto"
+            >
+              <video src=""></video>
+              <div
+                class="max-[770px]:flex max-[770px]:flex-col max-[770px]:justify-center max-[770px]:items-center"
+              >
+                <h3 class="py-[15px] text-xl">پیشنهاد مبدا</h3>
+                <p class="text-[#979797] max-[770px]:text-center">
+                  اپلیکیشن تپسی با قابلیت‌های هوشمندش به شما در انتخاب سریع مبدا
+                  همیشگی‌تان کمک می‌کند.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
