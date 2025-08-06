@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>دانلود اپلیکیشن تاکسی اینترنتی - ثبت نام مسافر تپسی| TAPSI</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link
       rel="shortcut icon"
       href="../images/favicon.ico.png"
@@ -15,23 +16,185 @@
   <body>
     <!-- header -------- -->
     <header>
-      <div class="nav">
-        <a href="" class="tapsi-name"> تپسی </a>
-        <ul id="nav-items">
-          <li><a href="">ثبت نام راننده خودرو</a></li>
-          <li><a href="">ثبت نام راننده موتور</a></li>
-          <li><a href="">وبلاگ</a></li>
-          <li><a href="">پشتیبانی</a></li>
-          <li><a href="">اپلیکیشن رانندگان</a></li>
-          <li>
-            <a href=""><button class="download-btn">دانلود تپسی</button></a>
-          </li>
-        </ul>
-        <i class="bxr bx-menu"></i>
-      </div>
+      <nav
+        class="flex px-[10%] top-0 items-center border-b-[1px] border-b-[#ddd] h-[60px] justify-between fixed z-50 bg-[#f8f8f8] w-full"
+      >
+        <a href="" class="text-2xl">Tapsi</a>
+        <div>
+          <ul class="flex items-center gap-[32px]">
+            <li>ثبت‌نام راننده خودرو</li>
+            <li>ثبت‌نام راننده موتور</li>
+            <li>وبلاگ</li>
+            <li>پشتیبانی</li>
+            <li>اپلیکیشن رانندگان</li>
+            <li
+              class="bg-[linear-gradient(91deg,_#f73,_#ff5722_50%,_#e54917)] min-[1000px]:flex h-[40px] hidden items-center justify-center w-[130px] text-white rounded-full"
+            >
+              دانلود تپسی
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <!-- main body -------- -->
-    <main></main>
+    <!-- main --------- -->
+    <main class="mt-[60px]">
+      <!-- section 1 ---------- -->
+      <section
+        class="min-[1200px]:w-[1170px] min-[1000px]:w-[970px] min-[770px]:w-[750px] px-[15px] pt-[32px] mx-auto my-[30px]"
+      >
+        <div>
+          <h1 class="pb-[10px] font-bold text-2xl">
+            دانلود اپلیکیشن مسافر تپسی
+          </h1>
+          <h5 class="pb-[10px]">
+            شما می‌توانید از طریق تمامی لینک‌های زیر اپلیکیشن را دانلود کنید.
+          </h5>
+        </div>
+
+        <div class="flex justify-between m-auto gap-[12px] w-full">
+          <div class="mt-[45px] flex-1">
+            <h4>برای سیستم‌عامل iOS</h4>
+            <a
+              href=""
+              class="bg-[linear-gradient(91.39deg,_#f73,_#ff5722_50.15%,_#e64917)] flex h-[50px] justify-between items-center text-white mt-[12px] px-[24px] w-full rounded-full"
+            >
+              <div class="flex">
+                <img src="" alt="" />
+                <p>دریافت مستقیم (وب‌اپ - PWA)</p>
+              </div>
+              <img src="" alt="" />
+            </a>
+            <a
+              href=""
+              class="bg-[#eaeded] flex h-[50px] justify-between items-center text-black mt-[12px] px-[24px] w-full rounded-full"
+            >
+              <div class="flex">
+                <img src="" alt="" />
+                <p>دریافت از اپ استار</p>
+              </div>
+              <img src="" alt="" />
+            </a>
+            <a
+              href=""
+              class="bg-[#eaeded] flex h-[50px] justify-between items-center text-black mt-[12px] px-[24px] w-full rounded-full"
+            >
+              <div class="flex">
+                <img src="" alt="" />
+                <p>دریافت از سیب‌اپ</p>
+              </div>
+              <img src="" alt="" />
+            </a>
+            <a
+              href=""
+              class="bg-[#eaeded] flex h-[50px] justify-between items-center text-black mt-[12px] px-[24px] w-full rounded-full"
+            >
+              <div class="flex">
+                <img src="" alt="" />
+                <p>آی اپس</p>
+              </div>
+              <img src="" alt="" />
+            </a>
+            <div>
+              <div
+                class="flex items-center justify-start cursor-pointer h-[50px] px-[12px] mt-[10px] w-full"
+                id="more"
+              >
+                <p>بیشتر</p>
+                <img src="" alt="" />
+              </div>
+              <div class="h-0 overflow-hidden" id="itemss">
+                <div class="flex-1">
+                  <a
+                    href=""
+                    class="bg-[#eaeded] flex h-[50px] justify-between items-center text-black mt-[12px] px-[24px] w-full rounded-full"
+                  >
+                    <div class="flex">
+                      <img src="" alt="" />
+                      <p>دریافت از سیب بازار</p>
+                    </div>
+                    <img src="" alt="" />
+                  </a>
+                  <a
+                    href=""
+                    class="bg-[#eaeded] flex h-[50px] justify-between items-center text-black mt-[12px] px-[24px] w-full rounded-full"
+                  >
+                    <div class="flex">
+                      <img src="" alt="" />
+                      <p>دریافت از سیب ایرانی</p>
+                    </div>
+                    <img src="" alt="" />
+                  </a>
+                  <a
+                    href=""
+                    class="bg-[#eaeded] flex h-[50px] justify-between items-center text-black mt-[12px] px-[24px] w-full rounded-full"
+                  >
+                    <div class="flex">
+                      <img src="" alt="" />
+                      <p>دریافت از سیبچه</p>
+                    </div>
+                    <img src="" alt="" />
+                  </a>
+                  <a
+                    href=""
+                    class="bg-[#eaeded] flex h-[50px] justify-between items-center text-black mt-[12px] px-[24px] w-full rounded-full"
+                  >
+                    <div class="flex">
+                      <img src="" alt="" />
+                      <p>دریافت از اناردونی</p>
+                    </div>
+                    <img src="" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-[45px] flex-1">
+            <h4>برای سیستم‌عامل اندروید (Android)</h4>
+            <a
+              href=""
+              class="bg-[linear-gradient(91.39deg,_#f73,_#ff5722_50.15%,_#e64917)] flex h-[50px] justify-between items-center text-white mt-[12px] px-[24px] w-full rounded-full"
+            >
+              <div class="flex">
+                <img src="" alt="" />
+                <p>دریافت مستقیم اندروید</p>
+              </div>
+              <img src="" alt="" />
+            </a>
+            <a
+              href=""
+              class="bg-[#eaeded] flex h-[50px] justify-between items-center text-black mt-[12px] px-[24px] w-full rounded-full"
+            >
+              <div class="flex">
+                <img src="" alt="" />
+                <p>دریافت از بازار</p>
+              </div>
+              <img src="" alt="" />
+            </a>
+            <a
+              href=""
+              class="bg-[#eaeded] flex h-[50px] justify-between items-center text-black mt-[12px] px-[24px] w-full rounded-full"
+            >
+              <div class="flex">
+                <img src="" alt="" />
+                <p>دریافت از مایکت</p>
+              </div>
+              <img src="" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="mt-[30px] text-sm">
+            برای فعالیت بعنوان راننده،<a class="text-blue-500" href=""
+              >اپلیکیشن سفیران
+            </a>
+            را دریافت و نصب کنید.
+          </p>
+        </div>
+      </section>
+
+      <!-- section 2 ---------- -->
+    </main>
   </body>
 </html>
